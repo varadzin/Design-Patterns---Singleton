@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 final public class AppSettings {
     public static let shared = AppSettings()
@@ -15,4 +16,10 @@ final public class AppSettings {
     public func string(forKey key: String) -> String? {
         return settings[key] as? String
     }
+
+    public func int(forKey key: String) -> Int? {
+        return settings[key] as? Int
+    }
+
+
 }
